@@ -15,7 +15,7 @@ int main()
 
   cout << "Output: ";
   int result = 1;
-  for (int i = 0; i <= M; ==i) {
+  for (int i = 0; i <= M; ++i) {
    cout << result << " ";
    result *= N;
   }
