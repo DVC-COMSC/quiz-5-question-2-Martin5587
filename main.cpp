@@ -5,7 +5,7 @@ int main()
 {
    int N, M;
    
-   cout << "Enter your N, M(0 < N < 10,  1 <= M <= 10): ";
+   cout << "Enter your N, RULES: M(0 < N < 10,  1 <= M <= 10): ";
    cin >> N >> M;
   
   if (N <= 0 || N >= 10 || M < 1 || M > 10) {
@@ -13,10 +13,10 @@ int main()
    return 1;
   }
 
-  cout << "Output: ";
+  cout << N << " to power number: ";
   int result = 1;
   for (int i = 0; i <= M; ++i) {
-   cout << result << " ";
+   cout << result << (i < M ? ", " : "");
    result *= N;
   }
   cout << endl;
